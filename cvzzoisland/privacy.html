@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="it">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Privacy di CvzzoIsland</title>
+<meta name="description" content="Informativa sulla privacy di CvzzoIsland: quali dati usa, dove restano, con chi li condivide.">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="top"><a class="pill" href="./"><svg viewBox="0 0 32 32" aria-hidden="true"><path d="M16 5.5c6.6 0 10.8 5.4 10.8 11.6S22.2 27.5 16 27.5 5.2 23.3 5.2 17.1 9.4 5.5 16 5.5z" fill="#fff"/><rect x="11.2" y="15.1" width="2.8" height="5.2" rx="1.4" fill="#000"/><rect x="18" y="15.1" width="2.8" height="5.2" rx="1.4" fill="#000"/></svg>CvzzoIsland</a></div>
+<main>
+  <h1>Informativa sulla privacy</h1>
+  <p class="meta">Aggiornata il 17/11/2026</p>
+  <p>CvzzoIsland è un'app desktop per Windows, un progetto personale. Gira tutta sul PC di chi la usa: non ha un server suo, non ha account suoi, non raccoglie statistiche e non mostra pubblicità.</p>
+
+  <h2>Dati di Google</h2>
+  <p>Se colleghi un account Google, CvzzoIsland chiede questi permessi:</p>
+  <ul>
+    <li><strong>Calendari, in lettura</strong> (<code>calendar.readonly</code>): per mostrare gli eventi di oggi e della settimana, la prossima riunione e i risultati quando cerchi un evento.</li>
+    <li><strong>Eventi</strong> (<code>calendar.events</code>): per creare, modificare o eliminare un evento quando lo chiedi tu.</li>
+    <li><strong>Task</strong> (<code>tasks</code>): per mostrare le liste di task e per creare, completare, modificare o eliminare un task quando lo chiedi tu.</li>
+  </ul>
+  <p><strong>Dove restano.</strong> Eventi e task stanno nella memoria del PC finché l'app è aperta. Non vengono salvati su disco e non vanno a nessun server di CvzzoIsland, perché non ce ne sono. Il codice di accesso a Google sta nel Gestore credenziali di Windows.</p>
+  <p><strong>Con chi si condividono.</strong> Con nessuno, con una sola eccezione: se fai una domanda a Claude dall'isola, la domanda parte insieme al contesto della giornata, compresi gli eventi e i task di oggi. Va a Claude Code, installato sul tuo PC, che la manda ad Anthropic con il tuo account Claude. Per passarla a Claude Code l'app scrive un file temporaneo, cancellato appena arriva la risposta. Succede solo quando fai una domanda. Per quei dati valgono i termini e le impostazioni di privacy del tuo account Claude.</p>
+  <p><strong>Cosa non si fa.</strong> I dati di Google non si vendono, non servono per la pubblicità e CvzzoIsland non li usa per addestrare modelli di intelligenza artificiale.</p>
+  <div class="box">
+    <p>L'uso e il trasferimento ad altre app delle informazioni ricevute dalle API di Google da parte di CvzzoIsland rispettano le <a href="https://developers.google.com/terms/api-services-user-data-policy">norme sui dati utente dei servizi API di Google</a>, compresi i requisiti di uso limitato (Limited Use).</p>
+  </div>
+  <p><strong>Come togliere l'accesso.</strong> Dalla pagina <a href="https://myaccount.google.com/permissions">Account Google, app con accesso</a>. Dopo, CvzzoIsland non legge più niente.</p>
+
+  <h2>Altri dati</h2>
+  <ul>
+    <li><strong>Appunti copiati</strong>: la cronologia è salvata solo sul PC. Quello che copi da un gestore di password non viene salvato.</li>
+    <li><strong>Note</strong>: diventano file nel tuo vault Obsidian e nel tuo repository GitHub, se ne hai collegato uno.</li>
+    <li><strong>Musica</strong>: titolo e artista del brano arrivano da Windows. Se manca la copertina, titolo e artista vanno al catalogo pubblico di iTunes (Apple) per trovarla. Se colleghi Spotify, l'app legge il brano in riproduzione e salva o toglie un brano dalla tua libreria quando lo chiedi; il codice di accesso sta nel Gestore credenziali di Windows.</li>
+    <li><strong>Claude Code</strong>: l'isola legge dal PC lo stato delle sessioni aperte (al lavoro, ti aspetta, ha finito). Le frasi della cattura rapida possono andare a Claude per capire se sono un task, un evento o una nota.</li>
+  </ul>
+
+  <h2>Questo sito</h2>
+  <p>Queste pagine non usano cookie né statistiche. Sono ospitate da GitHub Pages: GitHub può registrare l'indirizzo IP di chi le visita, per sicurezza.</p>
+
+  <h2>Contatti e modifiche</h2>
+  <p>Per domande apri una segnalazione su <a href="https://github.com/simoneecuzzolin/simoneecuzzolin.github.io/issues">GitHub</a>. Se questa informativa cambia, cambia la data in cima; le versioni precedenti restano nella storia del repository.</p>
+</main>
+<footer>CvzzoIsland, progetto personale di <a href="https://github.com/simoneecuzzolin">simoneecuzzolin</a>. <a href="./">Home</a></footer>
+</body>
+</html>
