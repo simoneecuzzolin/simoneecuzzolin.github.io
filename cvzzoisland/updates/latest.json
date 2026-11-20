@@ -1,11 +1,11 @@
 {
-  "version": "0.2.0",
-  "notes": "Impostazioni nell'isola, aggiornamenti automatici",
-  "pub_date": "2026-11-19T11:55:15Z",
-  "platforms": {
-    "windows-x86_64": {
-      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVRem9UNm00SHRnajIyZmdvdUNMZUxVeEtiL1FmN3RLT2t3aTlvOGt2YkVmWFpWdzJpTEFVUUJreFNpdGJ3Zkx5Nk9ORXRHVUpFOUN2RC9PbjBYUndNUEc4a085bHNnOGdBPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzk1MDg5MzE1CWZpbGU6Q3Z6em9Jc2xhbmRfMC4yLjBfeDY0LXNldHVwLmV4ZQl2ZXJzaW9uOjAuMi4wCnpBNkxIWWw3WUlQR3lKZjBLZ3FCL0JWbUJMZWFqY3MvdTNCbHdKWnpRRlhXbXUxM1N6WmQyOExYeVdkTTlQZnE2Y2VKSDN5ZzNUaTFuSGVwRGs5OERRPT0K",
-      "url": "https://simoneecuzzolin.github.io/cvzzoisland/updates/CvzzoIsland_0.2.0_x64-setup.exe"
-    }
-  }
+    "version":  "0.2.1",
+    "notes":  "Dati di prova spenti all\u0027inizio, piccole correzioni",
+    "pub_date":  "2026-11-19T15:45:56Z",
+    "platforms":  {
+                      "windows-x86_64":  {
+                                             "signature":  "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVRem9UNm00SHRnajZkTTZ5eElacGtLK0hOWFMwK1BBeloxeWlOaXdvMzRwMkpYNEI4SDkwcmM5VXY0UWQ0dWg3cVdZbTk1V3BJTFdGcldvUGtDdjFFc2p3SThoQi9TakFRPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzk1MTAzMTU2CWZpbGU6Q3Z6em9Jc2xhbmRfMC4yLjFfeDY0LXNldHVwLmV4ZQl2ZXJzaW9uOjAuMi4xCnlMMDhVREIwUldZeUZRTmpYVXgyM2o3VlpaVWNReUlsYlB4T2dYR0tRdjdaeWZmQnBkYzRIZDl5ZFR4VTEwbkNzUEp2RFhVa1pSTERyaW53WDBNZkNBPT0K",
+                                             "url":  "https://simoneecuzzolin.github.io/cvzzoisland/updates/CvzzoIsland_0.2.1_x64-setup.exe"
+                                         }
+                  }
 }

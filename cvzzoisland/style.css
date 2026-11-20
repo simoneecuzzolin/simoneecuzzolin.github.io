@@ -47,3 +47,31 @@ code { font-size: .92em; background: var(--card); border: 1px solid var(--line);
 .box { background: var(--card); border: 1px solid var(--line); border-radius: 16px; padding: 4px 20px; margin: 20px 0; }
 footer { max-width: 680px; margin: 0 auto; padding: 20px 16px 40px; border-top: 1px solid var(--line); color: var(--fg2); font-size: 14px; }
 footer a { color: inherit; }
+
+/* pagina con le schermate e il pulsante Scarica (19/11/2026) */
+img { max-width: 100%; height: auto; display: block; }
+figure { margin: 0; }
+.dl { display: flex; flex-wrap: wrap; align-items: center; gap: 8px 16px; margin: 0 0 10px; }
+.btn { display: inline-flex; align-items: center; height: 46px; padding: 0 22px; border-radius: 23px; background: var(--pill); color: #fff; font-size: 16px; font-weight: 600; text-decoration: none; }
+.btn:hover { opacity: .88; }
+@media (prefers-color-scheme: dark) { .btn { background: #fff; color: #000; } }
+.dl-meta { margin: 0; color: var(--fg2); font-size: 14px; }
+.note { color: var(--fg2); font-size: 14px; }
+/* le schermate larghe escono dalla colonna del testo, fino a 960 px */
+.wide { margin: 28px calc(50% - min(480px, 50vw - 16px)); }
+.wide > img, .shots img { border-radius: 18px; }
+.peeks { display: grid; gap: 10px; margin: 16px 0; }
+.peeks img { width: 100%; max-width: 620px; border-radius: 16px; }
+.shots { display: grid; grid-template-columns: 1fr 1fr; gap: 18px; }
+@media (max-width: 720px) { .shots { grid-template-columns: 1fr; } }
+figcaption { margin-top: 6px; color: var(--fg2); font-size: 14px; }
+kbd { padding: 2px 6px; border: 1px solid var(--line); border-bottom-width: 2px; border-radius: 6px; background: var(--card); font: 600 12px/1.4 "Segoe UI", system-ui, sans-serif; }
+.steps { padding-left: 1.4em; }
+.steps li { margin: 10px 0; }
+.nov { list-style: none; padding: 0; }
+.nov li { margin: 0; padding: 10px 0; border-bottom: 1px solid var(--line); }
+.nov .when { margin: 0 6px; color: var(--fg2); font-size: 14px; }
+details { padding: 10px 0; border-bottom: 1px solid var(--line); }
+summary { cursor: pointer; font-weight: 600; }
+details p { margin: 8px 0 4px; color: var(--fg2); }
+.links { margin-top: 32px; }

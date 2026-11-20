@@ -4,27 +4,91 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>CvzzoIsland</title>
-<meta name="description" content="CvzzoIsland: un'isola in alto al centro dello schermo di Windows con agenda, task, appunti, timer, musica e Claude.">
+<meta name="description" content="CvzzoIsland: un'isola in alto al centro dello schermo di Windows con agenda, task, appunti, timer, musica, notifiche e Claude.">
 <link rel="stylesheet" href="style.css">
 </head>
 <body>
 <div class="top"><span class="pill"><svg viewBox="0 0 32 32" aria-hidden="true"><path d="M16 5.5c6.6 0 10.8 5.4 10.8 11.6S22.2 27.5 16 27.5 5.2 23.3 5.2 17.1 9.4 5.5 16 5.5z" fill="#fff"/><rect x="11.2" y="15.1" width="2.8" height="5.2" rx="1.4" fill="#000"/><rect x="18" y="15.1" width="2.8" height="5.2" rx="1.4" fill="#000"/></svg>CvzzoIsland</span></div>
 <main>
   <h1>CvzzoIsland</h1>
-  <p class="lead">Un'isola in alto al centro dello schermo di Windows. Mostra la giornata senza aprire niente: la prossima riunione, i task, il timer, la musica che suona, le sessioni di Claude Code.</p>
+  <p class="lead">Un'isola in alto al centro dello schermo di Windows. Mostra la giornata senza aprire niente: la prossima riunione, i task, il timer, la musica che suona, le notifiche, le sessioni di Claude Code.</p>
+  <div class="dl">
+  <!-- scarica -->
+  <a class="btn" href="updates/CvzzoIsland_0.2.1_x64-setup.exe">Scarica CvzzoIsland 0.2.1</a>
+  <p class="dl-meta">Windows 11, 64 bit &middot; 2,7 MB &middot; versione del 19/11/2026</p>
+  <!-- /scarica -->
+  </div>
+  <p class="note">Si installa per il tuo utente, senza permessi di amministratore, e si aggiorna da sola. Windows all'inizio mostra un avviso: <a href="#installare">ecco come si va avanti</a>.</p>
 
-  <h2>Cosa fa</h2>
+  <figure class="wide"><img src="img/oggi.png" width="960" height="500" alt="L'isola aperta sulla scheda Oggi: agenda, task, timer, musica e sessioni di Claude Code"></figure>
+
+  <h2>Chiusa, ti avvisa</h2>
+  <p>Quando non la usi è una pillola nera in cima allo schermo. Si allarga per un momento quando serve: la musica che suona, Claude Code che aspetta una tua risposta, una notifica appena arrivata.</p>
+  <div class="peeks">
+    <img src="img/chiusa-musica.png" width="620" height="170" alt="Isola chiusa con il brano che suona, il minutaggio e il volume del lettore" loading="lazy">
+    <img src="img/chiusa-claude.png" width="620" height="170" alt="Isola chiusa: una sessione di Claude Code aspetta un permesso" loading="lazy">
+    <img src="img/chiusa-avviso.png" width="620" height="170" alt="Isola chiusa con una notifica di Windows" loading="lazy">
+  </div>
+
+  <h2>Aperta, tutta la giornata</h2>
   <ul>
-    <li>Agenda e task di Google Calendar e Google Tasks: li mostra, e crea o modifica eventi e task quando glielo chiedi.</li>
-    <li>Cattura rapida da qualsiasi app: una nota, un task, un evento o una domanda.</li>
-    <li>Cronologia degli appunti copiati, cercabile, salvata solo sul PC.</li>
-    <li>Timer e pomodoro, player musicale, avvisi quando Claude Code ha finito o aspetta una risposta.</li>
+    <li><strong>Agenda e task</strong> di Google Calendar e Google Tasks, divisi tra lavoro e personale. Li crea e li modifica quando glielo chiedi. Per ora Google funziona solo sul PC dell'autore: <a href="#serve">cosa serve</a>.</li>
+    <li><strong>Cattura rapida</strong> da qualsiasi app con <kbd>Ctrl</kbd> <kbd>Alt</kbd> <kbd>Spazio</kbd>: una nota, un task, un evento o una domanda.</li>
+    <li><strong>Claude</strong>: domande sulla giornata, sugli appunti e sulle note; gli avvisi quando una sessione di Claude Code ha finito o aspetta.</li>
+    <li><strong>Appunti</strong>: la cronologia di quello che copi, cercabile, salvata solo sul PC. Quello che copi da un gestore di password non si salva.</li>
+    <li><strong>Timer e pomodoro</strong>, <strong>musica</strong> del lettore che suona, <strong>volume</strong> delle app e <strong>notifiche</strong> di Windows.</li>
+  </ul>
+  <div class="wide shots">
+    <figure><a href="img/claude.png"><img src="img/claude.png" width="960" height="500" alt="Scheda Claude: il riassunto della giornata e le sessioni di Claude Code" loading="lazy"></a><figcaption>Claude riassume la giornata e propone cosa fare.</figcaption></figure>
+    <figure><a href="img/appunti.png"><img src="img/appunti.png" width="960" height="500" alt="Scheda Appunti: testi, link, codice, colori e immagini copiati" loading="lazy"></a><figcaption>Gli appunti copiati, per tipo.</figcaption></figure>
+    <figure><a href="img/agenda.png"><img src="img/agenda.png" width="960" height="500" alt="Scheda Agenda: la settimana e gli impegni del giorno" loading="lazy"></a><figcaption>La settimana di Google Calendar.</figcaption></figure>
+    <figure><a href="img/impostazioni.png"><img src="img/impostazioni.png" width="960" height="500" alt="Pagina Impostazioni: aspetto, schermo, notifiche, appunti, sistema" loading="lazy"></a><figcaption>Le impostazioni, dall'ingranaggio.</figcaption></figure>
+  </div>
+  <p class="note">Nelle immagini ci sono dati di prova inventati.</p>
+
+  <h2 id="installare">Come si installa</h2>
+  <ol class="steps">
+    <li><strong>Scarica l'installer e aprilo.</strong> Windows mostra «Windows ha protetto il PC», perché l'installer non ha una firma digitale a pagamento. Clicca «Ulteriori informazioni» e poi «Esegui comunque».</li>
+    <li><strong>L'isola compare in alto al centro.</strong> Un clic la apre; <kbd>Ctrl</kbd> <kbd>Alt</kbd> <kbd>Spazio</kbd> apre la cattura rapida da qualsiasi app.</li>
+    <li><strong>Sistemala dall'ingranaggio</strong>: tema, monitor, notifiche, appunti, avvio con Windows.</li>
+  </ol>
+
+  <h2 id="serve">Cosa serve</h2>
+  <ul>
+    <li><strong>Windows 11</strong> a 64 bit. Su Windows 10 dovrebbe andare, ma non è provata.</li>
+    <li><strong>Google</strong>: per ora agenda e task di Google funzionano solo sul PC dell'autore. Senza Google i task si scrivono nell'isola e restano sul PC; l'agenda resta vuota.</li>
+    <li><strong>Claude</strong>: le domande passano da Claude Code, installato sul PC e collegato al tuo account Claude. Gli avvisi delle sessioni vogliono gli hook di Claude Code, per ora da impostare a mano.</li>
+    <li><strong>Note</strong>: se usi Obsidian finiscono nella cartella Inbox del vault aperto, altrimenti restano sul PC.</li>
+    <li><strong>Spotify</strong>: il cuore per salvare il brano funziona solo per gli account aggiunti a mano, perché su Spotify l'app è ancora in prova. Il resto della musica va con i lettori che compaiono nei controlli multimediali di Windows.</li>
   </ul>
 
-  <h2>Com'è fatta</h2>
-  <p>È un progetto personale. È un'app desktop per Windows e gira tutta sul PC: non ha un server suo e non si scarica da questo sito.</p>
+  <h2>Novità</h2>
+  <ul class="nov">
+    <!-- novita -->
+    <li><b>0.2.1</b><span class="when">19/11/2026</span>Dati di prova spenti all&#39;inizio, piccole correzioni</li>
+    <li><b>0.2.0</b><span class="when">19/11/2026</span>Impostazioni nell&#39;isola, aggiornamenti automatici</li>
+    <!-- /novita -->
+  </ul>
 
-  <p><a href="privacy.html">Informativa sulla privacy</a></p>
+  <h2>Domande</h2>
+  <details>
+    <summary>Come si aggiorna?</summary>
+    <p>Da sola: controlla un minuto e mezzo dopo l'avvio e poi ogni 6 ore. Quando c'è una versione nuova lo dice, e la installa solo se clicchi «Installa». Si controlla anche a mano, dalle Impostazioni.</p>
+  </details>
+  <details>
+    <summary>Dove restano i miei dati?</summary>
+    <p>Sul PC: in <code>%APPDATA%\CvzzoIsland</code>, e gli accessi a Google e Spotify nel Gestore credenziali di Windows. Non c'è un server di CvzzoIsland. I dettagli sono nell'<a href="privacy.html">informativa sulla privacy</a>.</p>
+  </details>
+  <details>
+    <summary>Come si disinstalla?</summary>
+    <p>Impostazioni di Windows, App, App installate, CvzzoIsland, Disinstalla. La cartella <code>%APPDATA%\CvzzoIsland</code> resta: cancellala a mano se non ti serve più.</p>
+  </details>
+  <details>
+    <summary>Costa qualcosa?</summary>
+    <p>No. È un progetto personale, senza pubblicità e senza account suoi.</p>
+  </details>
+
+  <p class="links"><a href="privacy.html">Informativa sulla privacy</a></p>
 </main>
 <footer>CvzzoIsland, progetto personale di <a href="https://github.com/simoneecuzzolin">simoneecuzzolin</a>.</footer>
 </body>
